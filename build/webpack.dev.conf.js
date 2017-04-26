@@ -21,7 +21,7 @@ function htmlPlugin(fileNames){
     plugins.push(
       new HtmlWebpackPlugin({
         filename: fileName + '.html',
-        template: 'html/'+fileName+'.html',
+        template: 'src/html/'+fileName+'.html',
         inject: true,
         chunks : [fileName]
       })

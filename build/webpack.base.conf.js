@@ -10,7 +10,7 @@ function entry(fileNames){
   var entry = {};
   for(var i=0;i<fileNames.length;i++){
     var fileName = fileNames[i];
-    entry[fileName] = './src/' + fileName + '/main.js';
+    entry[fileName] = './src/script/' + fileName + '/main.js';
   }
   return entry
 }
@@ -57,8 +57,8 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.ejs$/,
-        loader: "ejs-loader",
+        test: /\.art$/,
+        loader: "art-template-loader",
       }
     ]
   },

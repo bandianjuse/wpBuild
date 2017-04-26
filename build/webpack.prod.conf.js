@@ -69,7 +69,7 @@ function htmlPlugin(files){
     plugins.push(
       new HtmlWebpackPlugin({
         filename: filePath,
-        template:'html/'+fileName+'.html',
+        template:'src/html/'+fileName+'.html',
         inject: true,
         minify: {
           removeComments: true,
